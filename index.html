@@ -7,72 +7,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/23fb67ec12.js" crossorigin="anonymous"></script>
     </head>
-    <nav class="bg-black h-20 w-full grid grid-cols-2 place-content-between">
-
-        <div class="">
-            <h class="font-sans text-lg text-white justify-start p-5">Uber</h>
-            <div class="dropdown dropdown-start mt-3">
-                <label tabindex="0" class="btn btn-ghost ">
-                  <div class="w-10 rounded-full">
-                    <p class="text-white">Company</p> 
-                  </div>
-                </label>
-                <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                  <li>
-                    <a class="justify-between">
-                      About Us
-                    </a>
-                  </li>
-                  <li><a>Our Offerings</a></li>
-                  <li><a>How Uber Works</a></li>
-                </ul>
+    <body>
+        
+        <nav class="flex justify-between bg-black h-16 w-full mt-1 mb-4">
+            <div class="ml-12">
+                <h class="font-sans text-xl text-white justify-start p-5">Uber</h>
+                <div class="dropdown dropdown-start mt-3">
+                    <label tabindex="0" class="btn btn-ghost ">
+                    <div class="btn bg-black border-none font-sans hover:bg-slate-400 rounded-full h-4 w-18">
+                        <p class="text-white flex ">Company<i class="fa-solid fa-chevron-down pl-2" style="color: #e9eef7;"></i></p> 
+                    </div>
+                    </label>
+                    <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                    <li>
+                        <a class="justify-between">
+                        About Us
+                        </a>
+                    </li>
+                    <li><a>Our Offerings</a></li>
+                    <li><a>How Uber Works</a></li>
+                    </ul>
+                </div>
+                <h class="btn bg-black border-none font-sans hover:bg-slate-400 rounded-full h-4 w-18">Safety</h>
+                <h class="btn bg-black border-none font-sans hover:bg-slate-400 rounded-full h-4 w-18">Help</h>            
             </div>
-            <h class="font-sans text-lg text-white justify-start p-5">Safety</h>
-            <h class="font-sans text-lg text-white justify-start p-5">Help</h>            
-        </div>
-
-        <div class="grid grid-rows-5 gap-3 bg-black text-white justify-items-end h-20">
-            <div class="place-self-center p-2" >
-            <h class="text-white p-2"> <img class="h-5 w-7 mt-10" src="https://www.citypng.com/public/uploads/preview/internet-globe-white-icon-download-png-11637035078xsmw30yh5k.png"alt="globe">EN</h>
+            <!-- add icons, format & drop in main file -->
+            <div class="mr-20">
+                <h class="font-sans text-sm text-white content-center p-5 btn bg-black border-none hover:bg-slate-400 rounded-full h-4 w-18"><i class="fa-solid fa-globe fa-rotate-270 fa-md mr-2"></i>
+                    EN</h>
+                <div class="dropdown dropdown-start mt-3">
+                    <label tabindex="0" class="btn btn-ghost ">
+                    <div class="btn bg-black border-none font-sans hover:bg-slate-400 rounded-full h-4 w-18">
+                        <p class="flex justify-center items-center text-white"><i class="fa-solid fa-braille fa-md mr-2" style="color: #fafafa;"></i>
+                        Product
+                        </p> 
+                    </div>
+                    </label>
+                    <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Ride</a></li>
+                        <li><a>Drive</a></li>
+                    </ul>
+                </div>  
+                <h class="btn bg-black border-none font-sans text-sm text-white hover:bg-slate-400 rounded-full h-4 w-18">Login</h>
+                <h class="btn rounded-full content-center font-sans text-sm text-black bg-white p-4 h-4 w-18">Signup</h>            
             </div>
-            <div class="dropdown dropdown-end p-1">
-                <label tabindex="0" class="btn btn-ghost ">
-                  <div class="w-16 rounded-full">
-                    <p class="text-white p-1 text-center">Products</p> 
-                  </div>
-                </label>
-                <ul tabindex="0" class=" p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>Ride</a></li>
-                  <li><a>Drive</a></li>
-                </ul>
-            <button class=" btn btn-ghost rounded-xl ml-6 shadow text-fit w-12 p-3">login</button>
-            <button class=" btn btn-ghost rounded-full ml-6 shadow text-fit w-20 p-3 bg-white text-black">sign up</button>
-        </div>
-    
-    </nav>
-    <!-- starts the carousel box -->
-    <div class="h-[800px] w-full bg-contain p-10" style="background-image: url(https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1899,h_833/v1653688465/assets/29/74ec2f-a727-47e1-9695-c78f8dadee5f/original/DotCom_Update_Earner_bg2x.jpg);">
+
+        </nav>
+    <!-- starts the section -->
+    <div class="h-[800px] w-full bg-contain p-10 " style="background-image: url(https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1899,h_833/v1653688465/assets/29/74ec2f-a727-47e1-9695-c78f8dadee5f/original/DotCom_Update_Earner_bg2x.jpg);">
       <!-- the box itself -->
-        <div class="bg-white h-1/2 w-2/5 p-2">
-            <div class="hero flex justify-between w-[500px] py-2 gap-2 ">
+      <!-- hero makes it overlay -->
+        <div class="bg-white h-2/3 w-2/5 p-2 ml-36 divide-y-2">
+            <div class="hero flex justify-between w-[500px] py-10 gap-2 ml-5">
             
-                <a href="#item1" class="flex flex-col">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <a href="#item1" class="flex flex-col ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-auto">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
                     </svg>
                     Drive or Deliver
                 </a> 
-                <!-- add svg to top of columns -->
-                <a href="#item2" class="flex flex-col"><img class="h-10 w-10" src="(https://www.svgrepo.com/show/86567/fork-and-knife.svg);"></img>
-                    Eat</a> 
-                <a href="#item3" class="flex flex-col">
-                    Ride</a> 
+                <!-- added font awesome to top of columns -->
+                <a href="#item2" class="flex flex-col"><i class="fa-solid fa-utensils"></i>
+                    Eat
+                </a> 
+                <a href="#item3" class="flex flex-col"><i class="fa-solid fa-car"></i>
+                    Ride
+                </a> 
                 
             </div>
 <!-- content of carousel -->
-            <div class="carousel w-[500px]">
+            <div class="carousel w-[500px] ml-10">
                 <div id="item1" class="carousel-item w-full">
                     <div class="max-w-md">
                             <h1 class="text-box mb-5 text-5xl font-bold align-left">Get in the drivers seat & get paid</h1>
@@ -80,8 +87,8 @@
                             <button class="btn btn-primary bg-black text-white">Sign Up to Drive</button>
                             <br>
                             <br>
-                            <br>
-                            <p class="mb-5">Learn more about driving and delivering</p>
+                            <!-- <br>  line animation  -->
+                            <p class="border-b w-2/3 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300">Learn more about driving and delivering</p>
                     </div>
                 </div> 
                 <div id="item2" class="carousel-item w-[500px]">
@@ -91,8 +98,8 @@
                         <button class="btn btn-primary bg-black text-white">Order Now</button>
                         <br>
                         <br>
-                        <br>
-                        <p class="mb-5">Own a restaurant? Partner with Uber Eats</p>
+                        <br><!-- <br>  line animation  -->
+                        <p class="border-b w-2/3 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300">Own a restaurant? Partner with Uber Eats</p>
                     </div>
                 </div> 
                     <div id="item3" class="carousel-item w-[500px]">
@@ -100,14 +107,17 @@
                             <h1 class="text-box mb-5 text-5xl font-bold align-left">Request a ride now</h1>
                             <p class="mb-5">Drive on the platform with the largest network of active riders.</p>
                             <div class="">
-                                <input></input>
-                                <input></input>
-                            </div>
-                            <div class="flex">
-                            <button class="btn btn-primary bg-black text-white">Request Now</button>
-                            <button class="btn btn-primary bg-black text-white">Schedule for Later</button>
+                                <input class="border-solid border-2 rounded-lg border-black w-full bg-slate-200"></input>
+                                <br>
+                                <br>
+                                <input class="border-solid border-2 rounded-lg border-black w-full bg-slate-200"></input>
                             </div>
                             <br>
+                            <div class="flex justify-between">
+                            <button class="btn btn-primary bg-black text-white">Request Now</button>
+                            <br>
+                            <button class="btn btn-primary bg-black text-white ">Schedule for Later</button>
+                            </div>
                             <br>
                             <br>
                         </div>
@@ -196,4 +206,5 @@
         </div>
 
     </section>
+    </body>
 </html>
