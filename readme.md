@@ -5,3 +5,5 @@ used daisy ui hero box and footer-->
 #first section '''carousel'''
 
 
+'''content-center to position text in the center of button'''
+
